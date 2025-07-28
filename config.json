@@ -1,0 +1,6 @@
+{
+  "scan_threshold": 20,
+  "scan_timeframe": 5,
+  "traffic_threshold": 100,
+  "traffic_timeframe": 10
+}

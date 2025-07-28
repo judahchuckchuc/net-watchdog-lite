@@ -1,0 +1,14 @@
+[Unit]
+Description=Net Watchdog Lite Service
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /opt/net-watchdog-lite/main.py --interface eth0
+WorkingDirectory=/opt/net-watchdog-lite
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
